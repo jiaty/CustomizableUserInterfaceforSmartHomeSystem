@@ -1,0 +1,77 @@
+<FrameLayout
+    android:id="@+id/framlaySetUpMainScreenManagement"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="tw.edu.ncue.customizableuserinterfaceforsmarthomesystem.fragSetUpMainScreenManagement">
+    <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ScrollView
+            android:id="@+id/scrollLayout_setUpMainScreenManagement"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/bg_h_fuz"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:gravity="center">
+                    <RadioGroup
+                        android:id="@+id/rg_SetUpMainScreenManagement"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+                        <RadioButton
+                            android:id="@+id/rb_roomNumberSetUp"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/selector_left"
+                            android:button="@null"
+                            android:checked="false"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="@string/roomNumberSetUp"
+                            android:textColor="@drawable/selector_text"
+                            android:textSize="16sp" />
+                        <RadioButton
+                            android:id="@+id/rb_rightsSetUp"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/selector_mid"
+                            android:button="@null"
+                            android:checked="false"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="@string/rightsSetUp"
+                            android:textColor="@drawable/selector_text"
+                            android:textSize="16sp" />
+                        <RadioButton
+                            android:id="@+id/rb_mainScreenManagement"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/selector_right"
+                            android:button="@null"
+                            android:checked="true"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="@string/mainScreenManagement"
+                            android:textColor="@drawable/selector_text"
+                            android:textSize="16sp" />
+                    </RadioGroup>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </android.support.design.widget.CoordinatorLayout>
+</FrameLayout>

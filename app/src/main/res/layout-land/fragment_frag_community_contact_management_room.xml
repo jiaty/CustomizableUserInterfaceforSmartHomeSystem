@@ -1,0 +1,118 @@
+<FrameLayout
+    android:id="@+id/framlayCommunityContactManagementRoom"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="tw.edu.ncue.customizableuserinterfaceforsmarthomesystem.fragCommunityContactManagementRoom">
+    <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ScrollView
+            android:id="@+id/scrollLayout_communityContactManagementRoom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/bg_h_fuz"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:gravity="center">
+                    <RadioGroup
+                        android:id="@+id/rg_communityContactManagementRoom"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+                        <RadioButton
+                            android:id="@+id/rb_mailBox"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/selector_left"
+                            android:button="@null"
+                            android:checked="false"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="@string/mailBox"
+                            android:textColor="@drawable/selector_text"
+                            android:textSize="16sp" />
+                        <RadioButton
+                            android:id="@+id/rb_billboard"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/selector_mid"
+                            android:button="@null"
+                            android:checked="false"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="@string/billboard"
+                            android:textColor="@drawable/selector_text"
+                            android:textSize="16sp" />
+                        <RadioButton
+                            android:id="@+id/rb_contactManagementRoom"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/selector_right"
+                            android:button="@null"
+                            android:checked="true"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="@string/contactManagementRoom"
+                            android:textColor="@drawable/selector_text"
+                            android:textSize="16sp" />
+                    </RadioGroup>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/activity_horizontal_margin"
+                    android:paddingLeft="@dimen/activity_vertical_margin"
+                    android:paddingRight="@dimen/activity_vertical_margin"
+                    android:paddingTop="@dimen/activity_horizontal_margin"
+                    android:weightSum="1">
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.1"
+                        android:visibility="invisible" />
+
+                    <Button
+                        android:id="@+id/btn_leaveMessage"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="撰寫留言"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/btn_transparent"/>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.1"
+                        android:visibility="invisible" />
+
+                    <Button
+                        android:id="@+id/btn_callManagementRoom"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="呼叫管理室"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/btn_transparent"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </android.support.design.widget.CoordinatorLayout>
+</FrameLayout>

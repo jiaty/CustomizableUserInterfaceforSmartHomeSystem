@@ -1,0 +1,186 @@
+<FrameLayout
+    android:id="@+id/framlaySecuritySafeGuard"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="tw.edu.ncue.customizableuserinterfaceforsmarthomesystem.fragSecuritySafeGuard">
+
+    <android.support.design.widget.CoordinatorLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/btn_Edit_Safe_Guard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fabSize="mini"
+            android:layout_margin="10dp"
+            android:src="@drawable/tool"
+            app:backgroundTint="@color/set1_white2"
+            app:rippleColor="@color/set2_green"
+            app:layout_anchor="@+id/scrollLayout_securitySafeGuard"
+            app:layout_anchorGravity="top|right" />
+
+        <ScrollView
+            android:id="@+id/scrollLayout_securitySafeGuard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/bg_h_fuz"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:gravity="center">
+                    <RadioGroup
+                        android:id="@+id/rg_securitySafeGuard"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+                        <RadioButton
+                            android:id="@+id/rb_safeGuard"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/selector_left"
+                            android:button="@null"
+                            android:checked="true"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="@string/safeGuard"
+                            android:textColor="@drawable/selector_text"
+                            android:textSize="16sp" />
+                        <RadioButton
+                            android:id="@+id/rb_ringBell"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/selector_mid"
+                            android:button="@null"
+                            android:checked="false"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="@string/ringBell"
+                            android:textColor="@drawable/selector_text"
+                            android:textSize="16sp" />
+                        <RadioButton
+                            android:id="@+id/rb_monitor"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/selector_right"
+                            android:button="@null"
+                            android:checked="false"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="@string/monitor"
+                            android:textColor="@drawable/selector_text"
+                            android:textSize="16sp" />
+                        </RadioGroup>
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingBottom="@dimen/activity_horizontal_margin"
+                    android:paddingLeft="@dimen/activity_vertical_margin"
+                    android:paddingRight="@dimen/activity_vertical_margin"
+                    android:paddingTop="@dimen/activity_horizontal_margin">
+                    <Switch
+                        android:id="@+id/swt_SecuOnOff2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="保全系統"
+                        android:textColor="@android:color/white"
+                        android:textSize="24sp"
+                        android:textOn="@string/switch_on"
+                        android:textOff="@string/switch_off"
+                        android:switchMinWidth="100dp"
+                        android:minHeight="50dp"/>
+                    <TextView
+                        android:id="@+id/txv_sensor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="門窗感測"
+                        android:textColor="@android:color/white"
+                        android:textSize="24sp" />
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:stretchColumns="*" >
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <Button
+                                android:id="@+id/btn_rN1_window1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:background="@drawable/btn_pressed"
+                                android:textColor="@color/btnTextPress"
+                                android:text="@string/rN1_window1_close" />
+                            <Button
+                                android:id="@+id/btn_rN1_window2"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:background="@drawable/btn_transparent"
+                                android:text="@string/rN1_window2_open" />
+                        </TableRow>
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <Button
+                                android:id="@+id/btn_rN2_window1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:background="@drawable/btn_transparent"
+                                android:text="@string/rN2_window1_open" />
+                        </TableRow>
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <Button
+                                android:id="@+id/btn_rN3_window1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:background="@drawable/btn_pressed"
+                                android:textColor="@color/btnTextPress"
+                                android:text="@string/rN3_window1_close" />
+                            <Button
+                                android:id="@+id/btn_rN3_window2"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:background="@drawable/btn_pressed"
+                                android:textColor="@color/btnTextPress"
+                                android:text="@string/rN3_window2_close" />
+                        </TableRow>
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <Button
+                                android:id="@+id/btn_rN4_window1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:background="@drawable/btn_pressed"
+                                android:textColor="@color/btnTextPress"
+                                android:text="@string/rN4_window1_close" />
+                        </TableRow>
+                    </TableLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </android.support.design.widget.CoordinatorLayout>
+</FrameLayout>

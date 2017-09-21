@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1BBC9B</color>
+    <color name="colorPrimaryDark">#009685</color>
+    <color name="colorAccent">#E64C66</color>
+    <color name="btnWhite">#efffffff</color>
+    <color name="btnTextPress">#ef404040</color>
+    <color name="bg_black">#550D0D0D</color>
+    <color name="set1_gray">#838485</color>
+    <color name="set1_black">#0D0D0D</color>
+    <color name="set1_white">#66F2F2F2</color>
+    <color name="set1_white2">#99F2F2F2</color>
+    <color name="set1_Fullwhite">#ffF2F2F2</color>
+    <color name="set1_lightGreen">#efBAD9D6</color>
+    <color name="set1_deepGreen">#009685</color>
+    <color name="set2_red">#E64C66</color>
+    <color name="set2_deepBlue">#2D3E50</color>
+    <color name="set2_green">#ef1BBC9B</color>
+    <color name="set2_gray">#99AEAEAE</color>
+    <color name="set3_lightDarkGreen">#ef698C75</color>
+    <color name="set3_deepDarkGreen">#3C5951</color>
+    <color name="set3_lightBrown">#BFAE8E</color>
+    <color name="set3_deepBrown">#73604F</color>
+    <color name="set3_white">#88EBEBF2</color>
+    <color name="lightDarkGreen">#ef97A677</color>
+    <color name="lightGreen">#efEEF3CA</color>
+    <color name="yellow">#efD99F59</color>
+    <color name="yellowGreen">#CDDE47</color>
+    <color name="yellowGreen2">#BECD00</color>
+    <color name="lights_on">#efFFE47C</color>
+    <color name="lights_off">#efAAABAF</color>
+    <color name="lights_mid">#efCCAA48</color>
+</resources>

@@ -1,0 +1,287 @@
+<resources>
+    <string name="app_name">CustomizableUserInterfaceforSmartHomeSystem</string>
+    <string name="switch_on">ON</string>
+    <string name="switch_off">OFF</string>
+    <string name="toast_switch_on">保全啟動</string>
+    <string name="toast_switch_off">保全關閉</string>
+    <string name="safeGuard">保全</string>
+    <string name="ringBell">對講機</string>
+    <string name="monitor">監視器</string>
+    <string name="scenario">情境</string>
+    <string name="curtain">窗簾</string>
+    <string name="lights">燈光</string>
+    <string name="airConditioning">空調</string>
+    <string name="elevator">電梯</string>
+    <string name="mailBox">信箱</string>
+    <string name="billboard">公佈欄</string>
+    <string name="contactManagementRoom">聯絡管理室</string>
+    <string name="roomNumberSetUp">房號設定</string>
+    <string name="rightsSetUp">權限設定</string>
+    <string name="mainScreenManagement">主畫面配置</string>
+
+    <string-array name="roomNumberList">
+        <item>客廳</item>
+        <item>廚房</item>
+        <item>主臥</item>
+        <item>客房</item>
+    </string-array>
+    <string-array name="roomNumberList_E">
+        <item>Living Room</item>
+        <item>Kitchen</item>
+        <item>Master Bedroom</item>
+        <item>Guest Room</item>
+    </string-array>
+    <string name="roomNumber1">客廳</string>
+    <string name="roomNumber2">廚房</string>
+    <string name="roomNumber3">主臥</string>
+    <string name="roomNumber4">客房</string>
+    <string name="roomNumber1_E">Living Room</string>
+    <string name="roomNumber2_E">Kitchen</string>
+    <string name="roomNumber3_E">Master Bedroom</string>
+    <string name="roomNumber4_E">Guest Room</string>
+
+    <!--<string name="rN1_">客廳</string>-->
+    <!--<string name="rN2_">廚房</string>-->
+    <!--<string name="rN3_">主臥</string>-->
+    <!--<string name="rN4_">客房</string>-->
+
+    <string-array name="rN1_member">
+        <item>大門</item>
+        <item>車位</item>
+        <item>玄關</item>
+        <item>客廳</item>
+        <item>客廳陽台</item>
+        <item>公用廁所</item>
+        <item>浴室</item>
+    </string-array>
+    <string-array name="rN2_member">
+        <item>廚房</item>
+    </string-array>
+    <string-array name="rN3_member">
+        <item>主臥室</item>
+        <item>主臥陽台</item>
+        <item>主臥廁所</item>
+    </string-array>
+    <string-array name="rN4_member">
+        <item>客房</item>
+        <item>客房陽台</item>
+    </string-array>
+    <string name="rN1_member1">大門</string>
+    <string name="rN1_member2">車位</string>
+    <string name="rN1_member3">玄關</string>
+    <string name="rN1_member4">客廳</string>
+    <string name="rN1_member5">客廳陽台</string>
+    <string name="rN1_member6">公用廁所</string>
+    <string name="rN1_member7">浴室</string>
+    <string name="rN2_member1">廚房</string>
+    <string name="rN3_member1">主臥室</string>
+    <string name="rN3_member2">主臥陽台</string>
+    <string name="rN3_member3">主臥廁所</string>
+    <string name="rN4_member1">客房</string>
+    <string name="rN4_member2">客房陽台</string>
+
+
+    <!--<string name="rN1_m1_">大門</string>-->
+    <!--<string name="rN1_m2_">車位</string>-->
+    <!--<string name="rN1_m3_">玄關</string>-->
+    <!--<string name="rN1_m4_">客廳</string>-->
+    <!--<string name="rN1_m5_">客廳陽台</string>-->
+    <!--<string name="rN1_m6_">公用廁所</string>-->
+    <!--<string name="rN1_m7_">浴室</string>-->
+    <!--<string name="rN2_m1_">廚房</string>-->
+    <!--<string name="rN3_m1_">主臥房</string>-->
+    <!--<string name="rN3_m2_">主臥陽台</string>-->
+    <!--<string name="rN3_m3_">主臥廁所</string>-->
+    <!--<string name="rN4_m1_">客房</string>-->
+    <!--<string name="rN4_m2_">客房陽台</string>-->
+
+    <!--<string-array name="rN1_m_">-->
+        <!--<item>大門</item>-->
+        <!--<item>車位</item>-->
+        <!--<item>玄關</item>-->
+        <!--<item>客廳</item>-->
+        <!--<item>客廳陽台</item>-->
+        <!--<item>公用廁所</item>-->
+        <!--<item>浴室</item>-->
+    <!--</string-array>-->
+    <!--<string-array name="rN2_m_">-->
+        <!--<item>廚房</item>-->
+    <!--</string-array>-->
+    <!--<string-array name="rN3_m_">-->
+        <!--<item>主臥室</item>-->
+        <!--<item>主臥陽台</item>-->
+        <!--<item>主臥廁所</item>-->
+    <!--</string-array>-->
+    <!--<string-array name="rN4_m_">-->
+        <!--<item>客房</item>-->
+        <!--<item>客房陽台</item>-->
+    <!--</string-array>-->
+
+    <string-array name="monitor">
+        <item>大門監視器</item>
+        <item>車位監視器</item>
+        <item>客廳陽台監視器</item>
+        <item>主臥陽台監視器</item>
+        <item>客房陽台監視器</item>
+    </string-array>
+    <string name="rN1_m1_monitor">大門監視器</string>
+    <string name="rN1_m2_monitor">車位監視器</string>
+    <string name="rN1_m5_monitor">客廳陽台監視器</string>
+    <string name="rN3_m2_monitor">主臥陽台監視器</string>
+    <string name="rN4_m2_monitor">客房陽台監視器</string>
+    <string name="rN1_m1_monitor_on">大門監視器\n運作中</string>
+    <string name="rN1_m2_monitor_on">車位監視器\n運作中</string>
+    <string name="rN1_m5_monitor_on">客廳陽台監視器\n運作中</string>
+    <string name="rN3_m2_monitor_on">主臥陽台監視器\n運作中</string>
+    <string name="rN4_m2_monitor_on">客房陽台監視器\n運作中</string>
+    <string name="rN1_m1_monitor_off">大門監視器\n已關閉</string>
+    <string name="rN1_m2_monitor_off">車位監視器\n已關閉</string>
+    <string name="rN1_m5_monitor_off">客廳陽台監視器\n已關閉</string>
+    <string name="rN3_m2_monitor_off">主臥陽台監視器\n已關閉</string>
+    <string name="rN4_m2_monitor_off">客房陽台監視器\n已關閉</string>
+
+    <string-array name="window">
+        <item>客廳落地窗</item>
+        <item>客廳窗戶</item>
+        <item>廚房窗戶</item>
+        <item>主臥落地窗</item>
+        <item>主臥窗戶</item>
+        <item>客房落地窗</item>
+    </string-array>
+    <string name="rN1_window1_open">客廳落地窗\n開啟中</string>
+    <string name="rN1_window2_open">客廳窗戶\n開啟中</string>
+    <string name="rN2_window1_open">廚房窗戶\n開啟中</string>
+    <string name="rN3_window1_open">主臥落地窗\n開啟中</string>
+    <string name="rN3_window2_open">主臥窗戶\n開啟中</string>
+    <string name="rN4_window1_open">客房落地窗\n開啟中</string>
+    <string name="rN1_window1_close">客廳落地窗\n已關閉</string>
+    <string name="rN1_window2_close">客廳窗戶\n已關閉</string>
+    <string name="rN2_window1_close">廚房窗戶\n已關閉</string>
+    <string name="rN3_window1_close">主臥落地窗\n已關閉</string>
+    <string name="rN3_window2_close">主臥窗戶\n已關閉</string>
+    <string name="rN4_window1_close">客房落地窗\n已關閉</string>
+
+    <string-array name="curtain">
+        <item>客廳落地窗窗簾</item>
+        <item>客廳窗戶窗簾</item>
+        <item>廚房窗戶窗簾</item>
+        <item>主臥落地窗窗簾</item>
+        <item>主臥窗戶窗簾</item>
+        <item>客房落地窗窗簾</item>
+    </string-array>
+    <string name="rN1_w1_curtain_open">客廳落地窗窗簾\n已開啟</string>
+    <string name="rN1_w2_curtain_open">客廳窗戶窗簾\n已開啟</string>
+    <string name="rN2_w1_curtain_open">廚房窗戶窗簾\n已開啟</string>
+    <string name="rN3_w1_curtain_open">主臥落地窗窗簾\n已開啟</string>
+    <string name="rN3_w2_curtain_open">主臥窗戶窗簾\n已開啟</string>
+    <string name="rN4_w1_curtain_open">客房落地窗窗簾\n已開啟</string>
+    <string name="rN1_w1_curtain_working">客廳落地窗窗簾\n運作中</string>
+    <string name="rN1_w2_curtain_working">客廳窗戶窗簾\n運作中</string>
+    <string name="rN2_w1_curtain_working">廚房窗戶窗簾\n運作中</string>
+    <string name="rN3_w1_curtain_working">主臥落地窗窗簾\n運作中</string>
+    <string name="rN3_w2_curtain_working">主臥窗戶窗簾\n運作中</string>
+    <string name="rN4_w1_curtain_working">客房落地窗窗簾\n運作中</string>
+    <string name="rN1_w1_curtain_close">客廳落地窗窗簾\n已關閉</string>
+    <string name="rN1_w2_curtain_close">客廳窗戶窗簾\n已關閉</string>
+    <string name="rN2_w1_curtain_close">廚房窗戶窗簾\n已關閉</string>
+    <string name="rN3_w1_curtain_close">主臥落地窗窗簾\n已關閉</string>
+    <string name="rN3_w2_curtain_close">主臥窗戶窗簾\n已關閉</string>
+    <string name="rN4_w1_curtain_close">客房落地窗窗簾\n已關閉</string>
+    <string name="curtain_open">開啟</string>
+    <string name="curtain_close">關閉</string>
+    <string name="curtain_pause">暫停</string>
+    <string-array name="lights">
+        <item>大門燈光</item>
+        <item>車位燈光</item>
+        <item>玄關燈光</item>
+        <item>客廳燈光</item>
+        <item>客廳陽台燈光</item>
+        <item>公用廁所燈光</item>
+        <item>浴室燈光</item>
+        <item>廚房燈光</item>
+        <item>主臥房燈光</item>
+        <item>主臥陽台燈光</item>
+        <item>主臥廁所燈光</item>
+        <item>客房燈光</item>
+        <item>客房陽台燈光</item>
+    </string-array>
+    <string name="rN1_m1_lights_open">大門燈光\n開啟中</string>
+    <string name="rN1_m2_lights_open">車位燈光\n開啟中</string>
+    <string name="rN1_m3_lights_open">玄關燈光\n開啟中</string>
+    <string name="rN1_m4_lights_open">客廳燈光\n開啟中</string>
+    <string name="rN1_m5_lights_open">客廳陽台燈光\n開啟中</string>
+    <string name="rN1_m6_lights_open">公用廁所燈光\n開啟中</string>
+    <string name="rN1_m7_lights_open">浴室燈光\n開啟中</string>
+    <string name="rN2_m1_lights_open">廚房燈光\n開啟中</string>
+    <string name="rN3_m1_lights_open">主臥房燈光\n開啟中</string>
+    <string name="rN3_m2_lights_open">主臥陽台燈光\n開啟中</string>
+    <string name="rN3_m3_lights_open">主臥廁所燈光\n開啟中</string>
+    <string name="rN4_m1_lights_open">客房燈光\n開啟中</string>
+    <string name="rN4_m2_lights_open">客房陽台燈光\n開啟中</string>
+    <string name="rN1_m1_lights_close">大門燈光\n已關閉</string>
+    <string name="rN1_m2_lights_close">車位燈光\n已關閉</string>
+    <string name="rN1_m3_lights_close">玄關燈光\n已關閉</string>
+    <string name="rN1_m4_lights_close">客廳燈光\n已關閉</string>
+    <string name="rN1_m5_lights_close">客廳陽台燈光\n已關閉</string>
+    <string name="rN1_m6_lights_close">公用廁所燈光\n已關閉</string>
+    <string name="rN1_m7_lights_close">浴室燈光\n已關閉</string>
+    <string name="rN2_m1_lights_close">廚房燈光\n已關閉</string>
+    <string name="rN3_m1_lights_close">主臥房燈光\n已關閉</string>
+    <string name="rN3_m2_lights_close">主臥陽台燈光\n已關閉</string>
+    <string name="rN3_m3_lights_close">主臥廁所燈光\n已關閉</string>
+    <string name="rN4_m1_lights_close">客房燈光\n已關閉</string>
+    <string name="rN4_m2_lights_close">客房陽台燈光\n已關閉</string>
+
+    <string-array name="airConditioning">
+        <item>客廳空調</item>
+        <item>廚房空調</item>
+        <item>主臥空調</item>
+        <item>客房空調</item>
+    </string-array>
+    <string name="rN1_airConditioning">客廳空調</string>
+    <string name="rN2_airConditioning">廚房空調</string>
+    <string name="rN3_airConditioning">主臥空調</string>
+    <string name="rN4_airConditioning">客房空調</string>
+    <string name="rN1_airConditioning_on">客廳空調\n運作中</string>
+    <string name="rN2_airConditioning_on">廚房空調\n運作中</string>
+    <string name="rN3_airConditioning_on">主臥空調\n運作中</string>
+    <string name="rN4_airConditioning_on">客房空調\n運作中</string>
+    <string name="rN1_airConditioning_off">客廳空調\n已關閉</string>
+    <string name="rN2_airConditioning_off">廚房空調\n已關閉</string>
+    <string name="rN3_airConditioning_off">主臥空調\n已關閉</string>
+    <string name="rN4_airConditioning_off">客房空調\n已關閉</string>
+    <string name="airCon_now_temp">室內溫度</string>
+    <string name="airCon_target_temp">目標溫度</string>
+    <string name="airCon_function">功能</string>
+    <string name="airCon_fun1">冷氣</string>
+    <string name="airCon_fun2">除溼</string>
+    <string name="airCon_fun3">送風</string>
+    <string name="airCon_fun4">暖氣</string>
+    <string name="airCon_fanSpeed">風速</string>
+    <string name="airCon_fs1">AUTO</string>
+    <string name="airCon_fs2">強風</string>
+    <string name="airCon_fs3">弱風</string>
+    <string name="airCon_fs4">目標溫度</string>
+    <string name="airCon_time_off">定時關閉</string>
+    <string name="airCon_time_on">定時開啟</string>
+    <string name="airCon_hour">小時</string>
+
+    <string name="_open">\n開啟中</string>
+    <string name="_close">\n已關閉</string>
+    <string name="_on">\n運作中</string>
+    <string name="_off">\n已關閉</string>
+
+    <string name="frontDoor_open">前門\n開啟中</string>
+    <string name="frontDoor_close">前門\n已關閉</string>
+    <string name="backDoor_open">後門\n開啟中</string>
+    <string name="backDoor_close">後門\n已關閉</string>
+    <string name="eastWindow_open">東邊窗戶\n開啟中</string>
+    <string name="eastWindow_close">東邊窗戶\n已關閉</string>
+    <string name="northWindow_open">北邊窗戶\n開啟中</string>
+    <string name="northWindow_close">北邊窗戶\n已關閉</string>
+    <string name="westWindow_open">西邊落地窗\n開啟中</string>
+    <string name="westWindow_close">西邊落地窗\n已關閉</string>
+
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

@@ -1,0 +1,113 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/framlaySetUpRoomNumberSetUp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="tw.edu.ncue.customizableuserinterfaceforsmarthomesystem.fragSetUpRoomNumberSetUp">
+
+    <android.support.design.widget.CoordinatorLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/bg_h_fuz">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/btn_Edit_RoomNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fabSize="mini"
+            android:layout_margin="10dp"
+            android:src="@drawable/tool"
+            app:backgroundTint="@color/set1_white2"
+            app:rippleColor="@color/set2_green"
+            app:layout_anchor="@+id/linlay_roonNumber"
+            app:layout_anchorGravity="top|right" />
+
+        <LinearLayout
+            android:id="@+id/linlay_roonNumber"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <RadioGroup
+                    android:id="@+id/rg_SetUpRoomNumberSetUp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_roomNumberSetUp"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/selector_left"
+                        android:button="@null"
+                        android:checked="true"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="@string/roomNumberSetUp"
+                        android:textColor="@drawable/selector_text"
+                        android:textSize="16sp" />
+
+                    <RadioButton
+                        android:id="@+id/rb_rightsSetUp"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/selector_mid"
+                        android:button="@null"
+                        android:checked="false"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="@string/rightsSetUp"
+                        android:textColor="@drawable/selector_text"
+                        android:textSize="16sp" />
+
+                    <RadioButton
+                        android:id="@+id/rb_mainScreenManagement"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/selector_right"
+                        android:button="@null"
+                        android:checked="false"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="@string/mainScreenManagement"
+                        android:textColor="@drawable/selector_text"
+                        android:textSize="16sp" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.2"
+                    android:visibility="invisible" />
+
+                <ListView
+                    android:id="@+id/lv_roomNumber"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.6" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.2"
+                    android:visibility="invisible" />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.design.widget.CoordinatorLayout>
+</FrameLayout>

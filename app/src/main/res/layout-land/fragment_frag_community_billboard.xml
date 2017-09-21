@@ -1,0 +1,121 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/framlayCommunityBillboard"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="tw.edu.ncue.customizableuserinterfaceforsmarthomesystem.fragCommunityBillboard">
+
+    <android.support.design.widget.CoordinatorLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/btn_Edit_Billboard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fabSize="mini"
+            android:layout_margin="10dp"
+            android:src="@drawable/tool"
+            app:backgroundTint="@color/set1_white2"
+            app:rippleColor="@color/set2_green"
+            app:layout_anchor="@+id/scrollLayout_communityBillboard"
+            app:layout_anchorGravity="top|right" />
+
+        <ScrollView
+            android:id="@+id/scrollLayout_communityBillboard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/bg_h_fuz"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:id="@+id/linlay_billboard"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <RadioGroup
+                        android:id="@+id/rg_communityBillboard"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rb_mailBox"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/selector_left"
+                            android:button="@null"
+                            android:checked="false"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="@string/mailBox"
+                            android:textColor="@drawable/selector_text"
+                            android:textSize="16sp" />
+
+                        <RadioButton
+                            android:id="@+id/rb_billboard"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/selector_mid"
+                            android:button="@null"
+                            android:checked="true"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="@string/billboard"
+                            android:textColor="@drawable/selector_text"
+                            android:textSize="16sp" />
+
+                        <RadioButton
+                            android:id="@+id/rb_contactManagementRoom"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/selector_right"
+                            android:button="@null"
+                            android:checked="false"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="@string/contactManagementRoom"
+                            android:textColor="@drawable/selector_text"
+                            android:textSize="16sp" />
+                    </RadioGroup>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.1"
+                        android:visibility="invisible" />
+
+                    <ListView
+                        android:id="@+id/lv_billBoard"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.8" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.1"
+                        android:visibility="invisible" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </android.support.design.widget.CoordinatorLayout>
+</FrameLayout>

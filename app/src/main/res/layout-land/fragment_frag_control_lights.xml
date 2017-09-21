@@ -1,0 +1,310 @@
+<FrameLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/framlayControlLights"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="tw.edu.ncue.customizableuserinterfaceforsmarthomesystem.fragControlLights">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/btn_Edit_Lights"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fabSize="mini"
+            android:layout_margin="10dp"
+            android:src="@drawable/tool"
+            app:backgroundTint="@color/set1_white2"
+            app:rippleColor="@color/set2_green"
+            app:layout_anchor="@+id/scrollLayout_controlLights"
+            app:layout_anchorGravity="top|right" />
+
+        <ScrollView
+            android:id="@+id/scrollLayout_controlLights"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/bg_h_fuz"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:gravity="center">
+                    <RadioGroup
+                        android:id="@+id/rg_controlLights"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+                        <RadioButton
+                            android:id="@+id/rb_scenario"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/selector_left"
+                            android:button="@null"
+                            android:checked="false"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="@string/scenario"
+                            android:textColor="@drawable/selector_text"
+                            android:textSize="16sp" />
+                        <RadioButton
+                            android:id="@+id/rb_curtain"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/selector_mid"
+                            android:button="@null"
+                            android:checked="false"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="@string/curtain"
+                            android:textColor="@drawable/selector_text"
+                            android:textSize="16sp" />
+                        <RadioButton
+                            android:id="@+id/rb_lights"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/selector_mid"
+                            android:button="@null"
+                            android:checked="true"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="@string/lights"
+                            android:textColor="@drawable/selector_text"
+                            android:textSize="16sp" />
+                        <RadioButton
+                            android:id="@+id/rb_airConditioning"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/selector_mid"
+                            android:button="@null"
+                            android:checked="false"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="@string/airConditioning"
+                            android:textColor="@drawable/selector_text"
+                            android:textSize="16sp" />
+                        <RadioButton
+                            android:id="@+id/rb_elevator"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/selector_right"
+                            android:button="@null"
+                            android:checked="false"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="@string/elevator"
+                            android:textColor="@drawable/selector_text"
+                            android:textSize="16sp" />
+                    </RadioGroup>
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingBottom="@dimen/activity_horizontal_margin"
+                    android:paddingLeft="@dimen/activity_vertical_margin"
+                    android:paddingRight="@dimen/activity_vertical_margin"
+                    android:paddingTop="@dimen/activity_horizontal_margin">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="客廳"
+                        android:textColor="@android:color/white"
+                        android:textSize="24sp" />
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:stretchColumns="*" >
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <Button
+                                android:id="@+id/btn_rN1_m1_lights"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:background="@drawable/btn_lights_off"
+                                android:textColor="@color/btnTextPress"
+                                android:text="@string/rN1_m1_lights_close" />
+                            <Button
+                                android:id="@+id/btn_rN1_m2_lights"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:background="@drawable/btn_lights_on"
+                                android:text="@string/rN1_m2_lights_open" />
+                        </TableRow>
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <Button
+                                android:id="@+id/btn_rN1_m3_lights"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:background="@drawable/btn_lights_on"
+                                android:text="@string/rN1_m3_lights_open" />
+                            <Button
+                                android:id="@+id/btn_rN1_m4_lights"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:background="@drawable/btn_lights_off"
+                                android:textColor="@color/btnTextPress"
+                                android:text="@string/rN1_m4_lights_close" />
+                        </TableRow>
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <Button
+                                android:id="@+id/btn_rN1_m5_lights"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:background="@drawable/btn_lights_on"
+                                android:text="@string/rN1_m5_lights_open" />
+                            <Button
+                                android:id="@+id/btn_rN1_m6_lights"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:background="@drawable/btn_lights_on"
+                                android:text="@string/rN1_m6_lights_open" />
+                        </TableRow>
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <Button
+                                android:id="@+id/btn_rN1_m7_lights"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:background="@drawable/btn_lights_off"
+                                android:textColor="@color/btnTextPress"
+                                android:text="@string/rN1_m7_lights_close" />
+                        </TableRow>
+                    </TableLayout>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="廚房"
+                        android:textColor="@android:color/white"
+                        android:textSize="24sp" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.25"
+                            android:visibility="invisible" />
+                        <Button
+                            android:id="@+id/btn_rN2_m1_lights"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/btn_lights_off"
+                            android:textColor="@color/btnTextPress"
+                            android:text="@string/rN2_m1_lights_close" />
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.25"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="主臥室"
+                        android:textColor="@android:color/white"
+                        android:textSize="24sp" />
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:stretchColumns="*" >
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <Button
+                                android:id="@+id/btn_rN3_m1_lights"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:background="@drawable/btn_lights_on"
+                                android:text="@string/rN3_m1_lights_open" />
+                            <Button
+                                android:id="@+id/btn_rN3_m2_lights"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:background="@drawable/btn_lights_off"
+                                android:textColor="@color/btnTextPress"
+                                android:text="@string/rN3_m2_lights_close" />
+                        </TableRow>
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <Button
+                                android:id="@+id/btn_rN3_m3_lights"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:background="@drawable/btn_lights_on"
+                                android:text="@string/rN3_m3_lights_open" />
+                        </TableRow>
+                    </TableLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="客房"
+                        android:textColor="@android:color/white"
+                        android:textSize="24sp" />
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:stretchColumns="*" >
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <Button
+                                android:id="@+id/btn_rN4_m1_lights"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:background="@drawable/btn_lights_off"
+                                android:textColor="@color/btnTextPress"
+                                android:text="@string/rN4_m1_lights_close" />
+                            <Button
+                                android:id="@+id/btn_rN4_m2_lights"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:background="@drawable/btn_lights_on"
+                                android:text="@string/rN4_m2_lights_open" />
+                        </TableRow>
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                        </TableRow>
+                    </TableLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </android.support.design.widget.CoordinatorLayout>
+</FrameLayout>

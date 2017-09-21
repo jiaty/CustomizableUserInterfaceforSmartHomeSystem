@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_home"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="tw.edu.ncue.customizableuserinterfaceforsmarthomesystem.MainActivity">
+
+    <TextView
+        android:id="@+id/txv_DateTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="DateTime"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        app:layout_anchor="@+id/scrollLayout"
+        app:layout_anchorGravity="top|center" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/btn_Edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:src="@drawable/tool"
+        app:backgroundTint="@color/set1_white2"
+        app:fabSize="mini"
+        app:layout_anchor="@+id/scrollLayout"
+        app:layout_anchorGravity="top|right"
+        app:rippleColor="@color/set2_green" />
+
+    <ScrollView
+        android:id="@+id/scrollLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/bg_h"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/activity_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/activity_horizontal_margin"
+            android:paddingLeft="@dimen/activity_vertical_margin"
+            android:paddingRight="@dimen/activity_vertical_margin"
+            android:paddingTop="@dimen/activity_horizontal_margin">
+
+            <TextView
+                android:id="@+id/txv_HomeName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MyHome"
+                android:textColor="@android:color/white"
+                android:textSize="36sp" />
+
+            <Switch
+                android:id="@+id/swt_SecuOnOff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="50dp"
+                android:switchMinWidth="100dp"
+                android:text="保全系統"
+                android:textColor="@android:color/white"
+                android:textOff="@string/switch_off"
+                android:textOn="@string/switch_on"
+                android:textSize="18sp"
+                android:textStyle="normal|bold" />
+            <!--android:drawableLeft="@drawable/security"-->
+
+            <TextView
+                android:id="@+id/txv_Notification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="通知"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+
+            <android.support.design.widget.CoordinatorLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/btn_DoorBell"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/btn_transparent"
+                    android:text="門鈴訊息" />
+
+                <Button
+                    android:id="@+id/btn_noti_DoorBell"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/btn_notification"
+                    android:text="1"
+                    android:textColor="@android:color/white"
+                    android:visibility="visible"
+                    app:layout_anchor="@+id/btn_DoorBell"
+                    app:layout_anchorGravity="top|right" />
+            </android.support.design.widget.CoordinatorLayout>
+
+            <android.support.design.widget.CoordinatorLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/btn_MailBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/btn_transparent"
+                    android:text="信箱訊息" />
+
+                <Button
+                    android:id="@+id/btn_noti_MailBox"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/btn_notification"
+                    android:text="4"
+                    android:textColor="@android:color/white"
+                    android:visibility="visible"
+                    app:layout_anchor="@+id/btn_MailBox"
+                    app:layout_anchorGravity="top|right" />
+            </android.support.design.widget.CoordinatorLayout>
+
+            <TextView
+                android:id="@+id/txv_FavorSituation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="情境模式"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="*">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/btn_Situation1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/btn_transparent"
+                        android:text="到家" />
+
+                    <Button
+                        android:id="@+id/btn_Situation2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/btn_pressed"
+                        android:text="晨起模式"
+                        android:textColor="@color/btnTextPress" />
+
+                    <Button
+                        android:id="@+id/btn_Situation3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/btn_pressed"
+                        android:text="就寢模式"
+                        android:textColor="@color/btnTextPress" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </TableLayout>
+
+            <TextView
+                android:id="@+id/txv_FavorFunction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="偏好功能"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="*">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/btn_favor_elevator"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/btn_transparent"
+                        android:text="電梯" />
+
+                    <android.support.design.widget.CoordinatorLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <Button
+                            android:id="@+id/btn_favor_sensor"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/btn_transparent"
+                            android:text="門窗感測" />
+
+                        <Button
+                            android:id="@+id/btn_noti_sensor"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/btn_notification"
+                            android:text="2"
+                            android:textColor="@android:color/white"
+                            android:visibility="visible"
+                            app:layout_anchor="@+id/btn_favor_sensor"
+                            app:layout_anchorGravity="top|right" />
+                    </android.support.design.widget.CoordinatorLayout>
+
+                    <android.support.design.widget.CoordinatorLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <Button
+                            android:id="@+id/btn_favor_curtain"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/btn_transparent"
+                            android:text="窗簾控制" />
+
+                        <Button
+                            android:id="@+id/btn_noti_curtain"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/btn_notification"
+                            android:text="2"
+                            android:textColor="@android:color/white"
+                            android:visibility="visible"
+                            app:layout_anchor="@+id/btn_favor_curtain"
+                            app:layout_anchorGravity="top|right" />
+                    </android.support.design.widget.CoordinatorLayout>
+
+                    <android.support.design.widget.CoordinatorLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <Button
+                            android:id="@+id/btn_favor_lights"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/btn_transparent"
+                            android:text="燈光控制" />
+
+                        <Button
+                            android:id="@+id/btn_noti_lights"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/btn_notification"
+                            android:text="7"
+                            android:textColor="@android:color/white"
+                            android:visibility="visible"
+                            app:layout_anchor="@+id/btn_favor_lights"
+                            app:layout_anchorGravity="top|right" />
+                    </android.support.design.widget.CoordinatorLayout>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.design.widget.CoordinatorLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <Button
+                            android:id="@+id/btn_favor_aircon"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/btn_transparent"
+                            android:text="空調控制" />
+
+                        <Button
+                            android:id="@+id/btn_noti_aircon"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/btn_notification"
+                            android:text="3"
+                            android:textColor="@android:color/white"
+                            android:visibility="visible"
+                            app:layout_anchor="@+id/btn_favor_aircon"
+                            app:layout_anchorGravity="top|right" />
+                    </android.support.design.widget.CoordinatorLayout>
+
+                    <android.support.design.widget.CoordinatorLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <Button
+                            android:id="@+id/btn_favor_billboard"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/btn_transparent"
+                            android:text="社區公告" />
+
+                        <Button
+                            android:id="@+id/btn_noti_billboard"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/btn_notification"
+                            android:text="3"
+                            android:textColor="@android:color/white"
+                            android:visibility="visible"
+                            app:layout_anchor="@+id/btn_favor_billboard"
+                            app:layout_anchorGravity="top|right" />
+                    </android.support.design.widget.CoordinatorLayout>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </TableLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</android.support.design.widget.CoordinatorLayout>
